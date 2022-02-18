@@ -1,0 +1,230 @@
+/*common css start*/
+*{
+    padding: 0;
+    margin: 0;
+}
+button, a{
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+p{
+    font-size: 14px;
+    line-height: 1.4;
+}
+img{
+    width: 100%;
+}
+a:hover{
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+/*common css End*/
+
+/*Header secton Nav css start*/
+.nav-main {
+    padding: 0% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background: #2d2d2d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+    /*fixed header*/
+.fixed-header .nav-main {
+    position: fixed;
+    background: #222222;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+ }
+.header-main-logo {
+    display: flex;
+    width: 160px;
+    flex-wrap: wrap;
+}
+.header-main-logo img {
+    width: 72%;
+    height: 62px;
+    flex-wrap: wrap;
+}
+/*Header secton Nav css End*/
+
+/*Main msidebar css start*/
+.sidebar-main-wrapper {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+    background: #ffffff;
+}
+.main-content-wrapper {
+    padding: 100px 40px 40px 320px;
+    background: #f7f7f7;
+    min-height: 100vh;
+}
+.nav-item-main .nav-item-main-link {
+    padding: 5px 20px;
+    display: block;
+    font-size: 18px;
+    color: #222222;
+    font-weight: 600;
+}
+.nav-items-wrapper {
+    height: 100%;
+}
+.nav-item-main .nav-item-main-link:hover {
+    background: #dddd;
+}
+.submenu-item-link {
+    padding: 3px 12px 3px 35px;
+    display: block;
+    font-size: 16px;
+    color: #222222;
+    font-weight: 600;
+}
+.nav-item-main-link.active,
+.submenu-item-link.active,
+.submenu-item-link:hover{
+    background: #dddd;
+    color: #222222;
+}
+.has-submenu .nav-item-main-link:after {
+    content:"\f078";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(360deg);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.has-submenu .nav-item-main-link {
+    position: relative;
+}
+.nav-item-main-link.active:after {
+    transform: translateY(-50%) rotate(180deg);
+}
+/*Main sidebar css End*/
+
+/*login section css start*/
+.login-section,
+.register-section {
+    padding: 80px 0px;
+}
+.login-form,
+.register-form {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px #cccccc;
+    width: auto;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 50px 30px;
+    overflow: hidden;
+    position: relative;
+}
+.login-custom,
+.register-custom {
+    padding-left: 30px;
+}
+.login-custom h4,
+.register-custom h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #002147;
+}
+.login-custom input,
+.register-custom input {
+    border: 1px solid #e7e7e7;
+    box-shadow: inherit;
+    height: 50px;
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.login-custom label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: normal;
+    width: 50%;
+    align-items: center;
+    float: left;
+    color: #333339;
+}
+.login-custom label input {
+    float: left;
+    margin-right: 5px;
+    height: 20px;
+}
+.lost-pass-link {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    text-align: right;
+    color: #002147;
+}
+.login-custom button,
+.register-custom button {
+    display: inline-block;
+    border: medium;
+    background: #ffb606;
+    padding: 8px 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.link-bottom {
+    margin-bottom: 0;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    float: left;
+    color: #666666;
+    font-weight: 400;
+}
+.link-bottom a {
+    color: #002147;
+}
+.link-bottom a:hover {
+    color: #ffb606;
+}
+/*login section css End*/
+
+/*footer bottom css start*/
+.footer-bottom {
+    margin-top: 65px;
+    padding: 20px 0;
+    border-top: 1px solid #e7e7e7;
+}
+.footer-bottom-content p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0;
+}
+.footer-bottom-content p a {
+    margin-left: 5px;
+    color: #ffb606;
+}
+/*footer bottom css End*/

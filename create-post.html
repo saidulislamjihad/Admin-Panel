@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Panel</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<header class="header-main">
+	<nav class="nav-main">
+		<!-- logo start -->
+		<a href="#" class="header-main-logo">
+			<img src="assets/logo/Folio.png">
+		</a>
+		<!-- logo End -->
+		<!-- Small Device btn start -->
+		<!-- <div class="nav-toggle-btn">
+			<div class="btn-inner"></div>
+		</div> -->
+		<!-- Small Device btn End -->
+		
+	</nav>
+</header>
+
+<main>
+	<div class="sidebar-main-wrapper">
+		<ul class="nav-items-wrapper">
+			<li class="nav-item-main">
+				<a class="nav-item-main-link" href="index.html">Dashboard</a>
+			</li>
+			<li class="nav-item-main has-submenu">
+				<a class="nav-item-main-link active" href="">
+					Post
+				</a>
+				<ul class="nav-item-submenu collapse">
+					<li class="submenu-item">
+						<a class="submenu-item-link active" href="post-list.html">
+							Post List
+						</a>
+					</li>
+					<li class="submenu-item">
+						<a class="submenu-item-link" href="create-post.html">
+							Create Post
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="main-content-wrapper">
+		<div class="d-flex justify-content-between align-items-center mb-4">
+			<h2 class="page-title mb-0">Create Post</h2>
+			<a href="post-list.html" class="btn btn-info">Post List</a>
+		</div>
+		<section class="register-section pt-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-12 m-auto">
+						<form id="login-form" class="login-form">
+							<div class="col-lg-12 col-md-12 register-custom">
+								<h4>Create Post</h4>
+								<div class="col-md-12 form-group px-0">
+									<input type="text" name="title" placeholder="Title" class="form-control">
+								</div>
+								<div class="col-md-12 form-group px-0">
+									<textarea rows="5" id="ckeditor" class="form-control" name="description"></textarea>
+								</div>
+								<div class="col-md-12 form-group px-0">
+									<input type="file" name="image"class="form-control">
+								</div>
+								<div class="col-md-12 px-0">
+									<button type="submit">
+										Create
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/27.0.0/classic/ckeditor.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+ <script>
+                        ClassicEditor
+                                .create( document.querySelector( '#ckeditor' ) )
+                                .then( editor => {
+                                        console.log( editor );
+                                } )
+                                .catch( error => {
+                                        console.error( error );
+                                } );
+                </script>
+</body>
+</html>
